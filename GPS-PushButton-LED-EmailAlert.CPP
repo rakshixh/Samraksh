@@ -6,10 +6,10 @@
 
 static const int RXPin = 12 , TXPin = 13;
 static const uint32_t GPSBaud = 9600;
-const char* ssid     = " ";
-const char* password = " ";
-unsigned long myChannelNumber = ;
-const char * myWriteAPIKey = " ";
+const char* ssid     = " ";                 //enter wifi name
+const char* password = " ";                 //enter wifi password
+unsigned long myChannelNumber = ;           //enter thingspeak channel number
+const char * myWriteAPIKey = " ";           //enter thingspeak API KEY
 
 int ledpin = 5;
 int button = 4;
@@ -68,11 +68,11 @@ void loop()
  if (buttonState == 1)
  {
  digitalWrite(ledpin, HIGH); 
-             EMailSender emailSend(" ", " ");
+             EMailSender emailSend(" ", " ");                                  //enter email address and password of that email account respectively
              EMailSender::EMailMessage message;
              message.subject = "Danger Alert !!!HELP!!!";
              message.message = "Danger!!!<br> Go save her!!";
-             EMailSender::Response resp = emailSend.send(" ", message);
+             EMailSender::Response resp = emailSend.send(" ", message);       //enter email address to which you want email alert to be send
              Serial.println("Sending status: ");
              Serial.println(resp.code);
              Serial.println(resp.desc);
