@@ -1,20 +1,20 @@
 #include "ThingSpeak.h"
 #include <ESP8266WiFi.h>
 
-const char* ssid     = "GURURAJ ACHARYA";
-const char* password = "rachanaacharya";
+const char* ssid     = " "; //enter wifi name
+const char* password = " "; //enter wifi passsword
 
 //ThingSpeak Channel Details
-unsigned long myChannelNumber = 1643186;
-const char * myReadAPIKey = "QBFFR4EDSFEAM8VM";
+unsigned long myChannelNumber = ; //enter thingspeak channel number
+const char * myReadAPIKey = " ";  //enter thingspeak read API Key
 const int FieldNumber3 = 3;
 WiFiClient  client;
 
 int LastStatus=0;
-int frequency=1000; //Specified in Hz
+int frequency=1000; // in Hz
 int buzzPin=D5; 
-int timeOn=1000; //specified in milliseconds
-int timeOff=1000; //specified in millisecods
+int timeOn=1000; // in milliseconds
+int timeOff=1000; // in millisecods
 
 
 void setup()
@@ -41,10 +41,6 @@ void setup()
   Serial.println(WiFi.gatewayIP());
   ThingSpeak.begin(client);
 
-//Setting up LED & Button
-  //pinMode(LEDpin, OUTPUT);
-  //digitalWrite(LEDpin, LOW);
-  //pinMode(button, INPUT);
 }
 
 void loop()
