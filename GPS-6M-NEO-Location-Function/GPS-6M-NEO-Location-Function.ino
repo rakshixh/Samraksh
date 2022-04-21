@@ -8,8 +8,8 @@ static const int RXPin = 12 , TXPin = 13;
 static const uint32_t GPSBaud = 9600;
 const char* ssid     = "  ";
 const char* password = "  ";
-unsigned long myChannelNumber = 1643186;
-const char * myWriteAPIKey = "  ";
+unsigned long myChannelNumber = ; //enter thingspeak channel number
+const char * myWriteAPIKey = "  "; //enter thingspeak write API Key
 
 TinyGPSPlus gps;
 WiFiClient  client;
