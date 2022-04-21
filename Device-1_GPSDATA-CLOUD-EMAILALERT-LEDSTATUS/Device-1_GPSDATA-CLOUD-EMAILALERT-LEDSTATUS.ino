@@ -9,12 +9,12 @@ static const int RXPin = 12 , TXPin = 13;
 static const uint32_t GPSBaud = 9600;
 
 //Password Details
-const char* ssid     = "Akshatha";
-const char* password = "akshatha.r";
+const char* ssid     = " "; //enter wifi name
+const char* password = " "; //enter wifi password
 
 //ThingSpeak Channel Details
-unsigned long myChannelNumber = 1643186;
-const char * myWriteAPIKey = "MTEQZBBY7INY1DRI";
+unsigned long myChannelNumber = ;  //enter thingspeak Channel Number
+const char * myWriteAPIKey = " ";  //enter thingspeak write API Key
 
 //Button & LED Initializing
 int LEDpin = 5;
@@ -75,7 +75,7 @@ void loop()
               }
           }
           
-           buttonState=digitalRead(button); // put your main code here, to run repeatedly:
+           buttonState=digitalRead(button); 
               if (buttonState == 1)
                   {
                     digitalWrite(LEDpin, HIGH);
@@ -83,11 +83,11 @@ void loop()
 
                     //EMAIL FUNCTION
                     
-                    EMailSender emailSend("rakshith.19cs121@sode-edu.in", "rachanaacharya");
+                    EMailSender emailSend(" /*enter your email here*/  ", " /*enter your email account password*/ ");
                     EMailSender::EMailMessage message;
-                    message.subject = "Danger Alert !!!HELP!!!";
-                    message.message = "Danger!!!<br> Go save her!!";
-                    EMailSender::Response resp = emailSend.send("rakshixh.test@gmail.com", message);
+                    message.subject = " /*enter the subject of email message*/ ";
+                    message.message = " /*enter the message of the email*/ ";
+                    EMailSender::Response resp = emailSend.send(" /*enter the email address to which you wanna send emailMessage to*/ ", message);
                     Serial.println("Sending status: ");
                     Serial.println(resp.code);
                     Serial.println(resp.desc);
