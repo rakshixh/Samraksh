@@ -72,10 +72,68 @@
 
 <h3> LED </h3>
 
-![3 (2)](https://user-images.githubusercontent.com/83587918/192153264-70a90500-db6c-4d8e-b91c-7b6d973f4022.png)
+![ledd full](https://user-images.githubusercontent.com/83587918/192153523-6cbf3cee-493c-4d28-9390-c82958df5cf7.png)
 
-<h3> Power Supply <h3>
+<h3> Power Supply </h3>
 
 ![4](https://user-images.githubusercontent.com/83587918/192153297-5bf81667-bd8a-485b-93ff-c1b557a5641c.png)
+
+## Project Setup
+
+#### Step 1
+
+#### Step 2
+Install and setup Arduino IDE in your PC. Download and install all required libraries. Check and set the port in Arduino IDE and connect the NodeMCU ESP8266 using USB cable. Copy the code given above to a ESP8266 Node MCU of Device 1 and Device 2 respectively, in your Arduino IDE and make required changes in the code.
+Such As:
+* Wifi Name
+* Wifi Password
+* Channel ID
+* Thingspeak API Key
+
+    #### Note
+    Create an account in Thingspeak Cloud service then create one channel, give a name for that particular channel. When you open that channel you will get option called "API KEYS" here you will get the API key of your channel which you will need to copy in the code! Also make sure to create 3 fields in "Channel Setting" section. And set the channel access to the public.
+
+## Output
+
+![Screenshot (285)](https://user-images.githubusercontent.com/83587918/192154265-6818ed7b-6df4-4b6b-a193-fa6851711153.png)
+
+![Screenshot (286)](https://user-images.githubusercontent.com/83587918/192154277-cf07ccda-2511-4b30-9506-9d59a3d9bfbb.png)
+
+![Screenshot (287)](https://user-images.githubusercontent.com/83587918/192154281-4b4d59c7-4e50-499f-b3ab-88b158310c93.png)
+
+![msg1794739563-10150](https://user-images.githubusercontent.com/83587918/192154383-61b5a74a-0083-496a-9367-79b2c1905712.jpg)
+
+## Result and Discussion
+
+* Once the trusted person/family member gets the output in Thingspeak (Cloud) they have to copy the Latitude & Longitude Values then paste it to the Google Map followed by " , "  
+* Example: Latitude=52.4512 & longitude=65.2165 then 52.4512,65.2165 is to be entered in Google Map.
+* That time in Google Map Trusted person/family member will get the exact location of that co-ordinates.
+* So that they can take further action.
+
+![Screenshot (26)](https://user-images.githubusercontent.com/83587918/192154453-a961c9af-86c6-4d5b-8996-1b0d84431fc5.png)
+
+![Screenshot (27)](https://user-images.githubusercontent.com/83587918/192154464-ecd129c9-d704-4e6a-85f6-d7a400b218f7.png)
+
+## End Customers
+* Common Proplr
+* Police Department
+* Government
+
+## Application
+* Girls when in suspicious environments or when in danger can share their location and hence ask for help from the known ones.
+* Aged people when away from home or are remote, can ask for help in case of any threats or health issues.
+* Children notify their guardians about the need for help when in trouble.
+* Getting notified about the location and the need for help facilitates quick action. 
+
+## Conclusion
+* Primary goal of this project is to ensure every woman in our society to feel safe and secured. According to the survey in India 53% of working women are not feeling safe.
+* Implementing real time application and a device, we can solve the problems to an extent.
+* With furthur research and innovation, this project is used as a small wearable device. 
+
+
+
+https://user-images.githubusercontent.com/83587918/192154887-5925bb24-6981-42fc-86ea-69c0e90c0d1c.mp4
+
+
 
 
