@@ -81,6 +81,58 @@
 ## Project Setup
 
 #### Step 1
+## Device 1 – Pin Connections
+
+```text
+              ┌──────────────────────┐
+              │   ESP8266 NodeMCU    │
+              └──────────────────────┘
+
+
+NEO-6M GPS
+───────────
+GPS VCC  ───────────────────► 3V3
+
+GPS GND  ───────────────────► GND
+
+GPS TX   ───────────────────► D6 / GPIO12
+
+GPS RX   ◄─────────────────── D7 / GPIO13
+
+
+LED
+────
+LED Terminal 1 (+)
+        │
+      [220Ω]
+        │
+        └────────────────────► D1 / GPIO5
+
+LED Terminal 2 (−) ──────────► GND
+
+
+PUSH BUTTON
+────────────
+Button Terminal 1 ───────────► 3V3
+
+Button Terminal 2 ───────────► D2 / GPIO4
+                                │
+                              [10kΩ]
+                                │
+                                ▼
+                               GND
+
+
+POWER
+──────
+5V Power Bank
+      │
+      │ USB Cable
+      ▼
+ESP8266 Micro-USB
+```
+
+Device 2:
 
 #### Step 2
 Install and setup Arduino IDE in your PC. Download and install all required libraries. Check and set the port in Arduino IDE and connect the NodeMCU ESP8266 using USB cable. Copy the code given above to a ESP8266 Node MCU of Device 1 and Device 2 respectively, in your Arduino IDE and make required changes in the code.
