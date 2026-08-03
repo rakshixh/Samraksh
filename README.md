@@ -132,7 +132,29 @@ POWER
 ESP8266 Micro-USB
 ```
 
-Device 2:
+## Device 2 – Pin Connections
+
+```text
+              ┌──────────────────────┐
+              │   ESP8266 NodeMCU    │
+              └──────────────────────┘
+
+
+BUZZER
+──────
+Buzzer Terminal 1 (+) ─────────► D5 / GPIO14
+
+Buzzer Terminal 2 (−) ─────────► GND
+
+
+POWER
+─────
+5V Power Bank
+      │
+      │ USB Cable
+      ▼
+ESP8266 Micro-USB
+```
 
 #### Step 2
 Install and setup Arduino IDE in your PC. Download and install all required libraries. Check and set the port in Arduino IDE and connect the NodeMCU ESP8266 using USB cable. Copy the code given above to a ESP8266 Node MCU of Device 1 and Device 2 respectively, in your Arduino IDE and make required changes in the code.
